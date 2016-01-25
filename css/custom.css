@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Dense;
+    src: url('../fonts/Dense-Regular.otf')
+}
+
+body{
+	font-family: Dense, Courier;
+}
+
+
+.header {
+	padding-top: 150px;
+	text-align: center;
+}
+
+.header > h1 {
+	font-size: 100px;
+}
+
+.header > a {
+	color: black;
+	font-size: 60px;
+}
+
+/*.teams {
+	padding-bottom: 450px;
+	padding-top: 450px;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+.teams {
+/*	position: absolute;*/
+	position: relative;
+	width: 45em;
+	height: 45em;
+	padding: 2.8em; 
+/*	border: dashed 5px;
+	border-radius: 50%;*/
+	margin: 1.75em auto 0;
+}
+
+.teams a {
+	color: black;
+	font-size: 40px;
+	display: block;
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 4em; height: 4em;
+	margin: -2em; /* 2em = 4em/2 */ /* half the width */
+}
+
+/*.teams img { display: block; width: 100%; }*/
+.deg0   { transform: translate(12em); 
+/*  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;*/
+} 
+.deg45  { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: translate(-12em); }
+.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+img.logo {
+	position: relative;
+	bottom:210px;
+	right: 210px;
+    display: block;
+	margin: auto;
+}
